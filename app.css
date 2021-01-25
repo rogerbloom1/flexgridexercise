@@ -1,0 +1,44 @@
+body {
+    width: fit-content;
+    height: fit-content;
+    margin: 3rem auto;
+    padding: 0;
+    background-color: rgba(0,0,138,.75);
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    border: 3px solid black;
+    width: 400px;
+    height: 400px;
+    font-size: 2rem; 
+    font-weight: bold;
+
+}
+.grid-item {
+    background-color: lightblue;
+    border: 3px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1, #box3, #box5, #box7, #box13, #box15 {
+    border-right: 1px solid lightgray;
+}
+#box6, #box7, #box12 {
+    border-bottom: 1px solid lightgray;
+}
+.prompt {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.answer {
+    width: 40%;
+    height: 40%;
+    text-align: center;
+}
+
